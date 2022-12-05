@@ -12,6 +12,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
 .section-center::before {
@@ -75,8 +77,9 @@
 }
 
 .weather-section .current-weather svg {
-  font-size: 8rem;
+  font-size: 10rem;
   color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
 }
 .weather-section .current-weather p {
   font-size: 0.9rem;
@@ -177,4 +180,13 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.copy {
+  color: rgba(255, 255, 255, 0.527);
+  position: absolute;
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
 }

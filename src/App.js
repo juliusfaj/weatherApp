@@ -25,6 +25,9 @@ function App() {
       }}
     >
       <Weather />
+      <p className="copy">
+        copyright @juliusFaj <span>{new Date().getFullYear()}</span>
+      </p>
     </section>
   );
 }
