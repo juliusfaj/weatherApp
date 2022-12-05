@@ -8,7 +8,12 @@ import Weather from "./weather";
 function App() {
   const data = [ImageOne, ImageTwo, ImageThree];
 
-  const [background, setBackground] = useState(data[2]);
+  const randNum = () => {
+    return Math.floor(Math.random() * data.length);
+  };
+
+  const [number, setNumber] = useState(randNum());
+  const [background, setBackground] = useState(data[number]);
 
   return (
     <section

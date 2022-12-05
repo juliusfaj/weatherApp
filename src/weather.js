@@ -41,7 +41,7 @@ const Weather = () => {
         setLoading(false);
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
         setWeather({});
         setLoading(false);
       });
@@ -51,7 +51,7 @@ const Weather = () => {
     fetchWeather();
   }, [city]);
 
-  console.log(weather);
+  // console.log(weather);
 
   const handleSubmit = (e) => {
     e.preventDefault();
